@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.myokhttp.MainActivity" >
+
+    <Button
+        android:id="@+id/btn_getAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        android:text="Get请求" />
+    <Button
+        android:id="@+id/btn_getDownLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_getAction"
+        android:layout_marginLeft="23dp"
+        android:text="Get请求下载文件" />
+
+    <Button
+        android:id="@+id/btn_postAction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_postAction1"
+        android:layout_below="@+id/btn_postAction1"
+        android:layout_marginTop="10dp"
+        android:text="Post提交字符串" />
+
+    <Button
+        android:id="@+id/btn_postUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_postAction2"
+        android:layout_below="@+id/btn_postAction2"
+        android:layout_marginTop="10dp"
+        android:text="Post上传文件" />
+
+    <Button
+        android:id="@+id/btn_postForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_postUpload"
+        android:layout_below="@+id/btn_postUpload"
+        android:layout_marginTop="10dp"
+        android:text="Post提交表单" />   
+
+    <Button
+        android:id="@+id/btn_postAction1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_getDownLoad"
+        android:layout_below="@+id/btn_getDownLoad"
+        android:text="Post提交键值对" />
+    <Button
+        android:id="@+id/btn_postJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_postForm"
+        android:layout_below="@+id/btn_postForm"
+        android:text="Post提交JSON" />
+
+</RelativeLayout>
